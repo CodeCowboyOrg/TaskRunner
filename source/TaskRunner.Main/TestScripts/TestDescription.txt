@@ -1,0 +1,46 @@
+
+The test are configured such that the VBscript "SleepScript02.vbs" and "SleepScript05.vbs" are in
+the "C:\Temp\VBScript" folder.  Though that can be changed in the GUI window.  These VBScripts 
+simulate a Task that runs for 2 minutes and 5 minutes, and so the MaxDuration can be tested for
+success and failure by setting the MaxDuration higher or lower for than 2 and 5 minutes for each
+script.  And dependent task and be monitored based on these times.  Checke the log file "TaskRunnerLog.txt"
+in the exe folder for status, or the debug console Output window.
+
+
+TaskGroup1.xml
+=================================================
+1) Task 1001 and Task 1003 depends on noone and will run immediately
+2) Task 1002 depends on Task 1001
+3) Task 1002 will start only after Task 1001 completes successfully
+
+
+TaskGroup2.xml
+=================================================
+1) Multiple Dependencies
+2) Task 1001 and 1003 depends on noone and will start immediately
+3) Task 1002 depends on 1001
+4) Task 1004 depends on both 1002 and 1003 and will start after both complete succesfully
+
+
+TaskGroup3.xml
+=================================================
+1) Multiple Dependencies
+2) Task 1001, 1002 and 1003 depends on noone and will start immediately
+3) Task 1004 depends on both 1002 and 1003 and will start after both complete succesfully
+
+
+TaskGroup4.xml
+=================================================
+1) Failure run over allotted time
+2) Task 1001, 1002, 1003 runs immediately, depend on noone
+3) Task 1002 will fail, run over alloted time
+4) Task 1004 depends on 1002 and will not run after 1002 fails
+
+
+TaskGroup5.xml
+=================================================
+1) Failure run over allotted time
+2) Task 1001, 1002, 1003 runs immediately, depend on noone
+3) Task depends on 1002 and 1003 and will run after both complete successfully
+4) Task 1004 will fail and run over allotted time
+

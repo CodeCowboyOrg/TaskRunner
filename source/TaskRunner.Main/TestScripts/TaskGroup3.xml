@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TaskGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TaskList>
+    <Task>
+      <Id>1001</Id>
+      <MaxDuration>5</MaxDuration>
+      <RunningDuration>1.9288769916666666</RunningDuration>
+      <StartTime>2013-05-16T17:28:51.3993447-04:00</StartTime>
+      <Executable>cscript.exe</Executable>
+      <Parameters>C:\Temp\VBScript\SleepScript02.vbs</Parameters>
+      <TaskName>Sleep 2 Min</TaskName>
+    </Task>
+    <Task>
+      <Id>1002</Id>
+      <MaxDuration>10</MaxDuration>
+      <RunningDuration>3.768248865</RunningDuration>
+      <StartTime>2013-05-16T16:55:16.7601139-04:00</StartTime>
+      <DependentIds />
+      <Executable>cscript.exe</Executable>
+      <Parameters>C:\Temp\VBScript\SleepScript05.vbs</Parameters>
+      <TaskName>Sleep 5 Min</TaskName>
+    </Task>
+    <Task>
+      <Id>1003</Id>
+      <MaxDuration>10</MaxDuration>
+      <RunningDuration>4.5340593333333334</RunningDuration>
+      <StartTime>2013-05-16T17:28:51.8493704-04:00</StartTime>
+      <Executable>cscript.exe</Executable>
+      <Parameters>C:\Temp\VBScript\SleepScript05.vbs</Parameters>
+      <TaskName>Sleep 5 Min</TaskName>
+    </Task>
+    <Task>
+      <Id>1004</Id>
+      <MaxDuration>5</MaxDuration>
+      <RunningDuration>0</RunningDuration>
+      <StartTime>0001-01-01T00:00:00</StartTime>
+      <DependentIds>1002, 1003</DependentIds>
+      <Executable>cscript.exe</Executable>
+      <Parameters>C:\Temp\VBScript\SleepScript02.vbs</Parameters>
+      <TaskName>Sleep 2 Min</TaskName>
+    </Task>
+  </TaskList>
+</TaskGroup>
