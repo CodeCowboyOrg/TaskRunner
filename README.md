@@ -2,7 +2,7 @@ TaskRunner - C# Gui Runs Task Through Task Scheduler Based on Nested Dependencie
 ====================================================================================
 This task was originally given as a Coding Assessment for a job interview.  The
 documentation is in the docs folder, along with a video explaining some of the issues
-with the task.
+with the task.  This was originall written in March 2013.
 ====================================================================================
 
 
